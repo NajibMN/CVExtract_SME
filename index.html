@@ -345,31 +345,47 @@
                         <h3>Any Inquiries</h3>
                         <p>
                           Fill out the form below, and our team will get back to
-                          you in no time with the perfect solution for your
-                          needs!
+                          you in no time with the perfect solution for your needs!
                         </p>
                       </div>
-                      <div class="form-field">
-                        <label>Name</label>
-                        <input type="text" placeholder="John Doe" />
-                      </div>
-                      <div class="form-field">
-                        <label>Email address</label>
-                        <input type="email" placeholder="name@domain.com" />
-                      </div>
-                      <div class="form-field">
-                        <label>Mobile number</label>
-                        <input type="tel" placeholder="+60 123456789" />
-                      </div>
-                      <div class="form-field">
-                        <label>Your Business Type</label>
-                        <input type="text" placeholder="Industry" />
-                      </div>
-                      <div class="form-field">
-                        <label>Message</label>
-                        <input type="text" placeholder="Your Message" />
-                      </div>
-                      <button class="sign-up-btn">Submit</button>
+                      <form action="https://formsubmit.co/David@imagineaigroup.com" method="POST">
+                        <!-- Use table format for better UI -->
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
+
+                        <!-- CC another email -->
+                        <input type="hidden" name="_cc" value="enquiry@imagineaigroup.com">
+                      
+                        <div class="form-field">
+                          <label>Name</label>
+                          <input type="text" name="name" placeholder="John Doe" required />
+                        </div>
+                      
+                        <div class="form-field">
+                          <label>Email address</label>
+                          <input type="email" name="email" placeholder="name@domain.com" required />
+                        </div>
+                      
+                        <div class="form-field">
+                          <label>Mobile number</label>
+                          <input type="tel" name="mobile" placeholder="+60 123456789" required />
+                        </div>
+                      
+                        <div class="form-field">
+                          <label>Your Business Type</label>
+                          <input type="text" name="business" placeholder="Industry" />
+                        </div>
+                      
+                        <div class="form-field">
+                          <label>Message</label>
+                          <input type="text" placeholder="Your Message" required />
+                        </div>
+                      
+                        <button type="submit" class="sign-up-btn">Submit</button>
+                      </form>
+                      
+                      
+                      
                     </div>
                   </div>
                 </div>
@@ -377,6 +393,7 @@
             </div>
           </div>
         </section>
+        
       </div>
     </main>
   </body>
